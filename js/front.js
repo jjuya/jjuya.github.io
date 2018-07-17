@@ -61,4 +61,7 @@ $(function () {
         return false;
     });
 
+    // custom
+    $('[data-toggle="tooltip"]').tooltip();
+
 });
