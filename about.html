@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 </html>
 <head>
@@ -61,30 +61,50 @@
 
         <!--   *** DETAIL ***-->
         <div class="col-md-8 col-lg-9 content-column white-background">
+          <!-- small nav -->
           <div class="small-navbar d-flex d-md-none">
             <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
             <h1 class="small-navbar-heading"> <a href="index.html">Hello, I'm JJuya</a></h1>
           </div>
-          <div class="row">
-            <div class="col-xl-10">
-              <div class="content-column-content">
-                <h1>About me</h1>
-                <p class="lead">
-                  사용자에 대한 <strong>관심과 이해</strong>, 개발한 프로그램에 대한 <strong>책임감</strong>을 가지고,<br>
-                  가치를 높여주는 서비스를 기획하고 개발하는 기발자를 꿈꿉니다.
-                </p>
-                <div class="row">
-                  <div class="col-lg-6">
-                  </div>
-                  <div class="col-lg-6">
-                    <canvas id="myChart" width="555" height="555"></canvas>
-                  </div>
-                <h4 class="text-uppercase">Skills</h4>
 
-                <p>Skill set</p>
+          <section id="about">
+            <div class="row">
+              <div class="col-xl-10">
+                <div class="content-column-content">
+                  <h1>About me</h1>
+                  <p class="lead">
+                    사용자에 대한 <strong>관심과 이해</strong>, 개발한 프로그램에 대한 <strong>책임감</strong>을 가지고,<br>
+                    가치를 높여주는 서비스를 기획하고 개발하는 기발자를 꿈꿉니다.
+                  </p>
+
+                  <!-- info and chart -->
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <p>
+                        자기소개 입력
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <canvas id="myChart" width="555" height="555"></canvas>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          <section>
+            <div class="row">
+              <div class="col-xl-10">
+                <div class="content-column-content">
+                  <!-- skills -->
+                  <h4 class="text-uppercase">Skills</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
         </div>
       </div>
     </div>
@@ -107,10 +127,10 @@
     var ctx = document.getElementById("myChart");
 
     var chartDatas = {
-      labels: ['워라밸', '경험', '협력', '확신', '사람', '성취감', '봉사'],
+      labels: ['워라밸', '경험', '협력', '사람', '성취감', '봉사'],
       datasets: [{
           label: '가치관',
-          data: [90, 80, 80, 70, 80, 70, 70],
+          data: [90, 80, 80, 80, 70, 70],
           backgroundColor: 'rgba(108, 178, 229, 0.2)',
           borderColor: 	'#67b0e4',
           pointBackgroundColor: '#67b0e4',
@@ -142,4 +162,4 @@
       options: chartOptions
     });
   </script>
-</body>
+</body> -->
