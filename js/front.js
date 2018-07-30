@@ -1,8 +1,5 @@
 $(function () {
 
-    lightbox();
-
-
     // ------------------------------------------------------ //
     // Masonary
     // ------------------------------------------------------ //
@@ -67,15 +64,3 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
 });
-
-/* =========================================
- *  lightbox
- *  =======================================*/
-
-function lightbox() {
-
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
-}
