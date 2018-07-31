@@ -40,13 +40,12 @@
             <p class="sidebar-p">I want to be a Goods developer. </p>
             <p class="sidebar-p">Originally from Daejeon, currently based in Bucheon. </p>
             <ul class="sidebar-menu">
-              <li class="sidebar-item"><a href="index.html" class="sidebar-link active">Intro</a></li>
-              <li class="sidebar-item"><a href="about.html" class="sidebar-link">About</a></li>
-              <li class="sidebar-item"><a href="project.html" class="sidebar-link">Project</a></li>
+              <li class="sidebar-item"><a href="#!" class="sidebar-link active" id="introBtn" onclick="intro_click();">Intro</a></li>
+              <li class="sidebar-item"><a href="#!" class="sidebar-link" id="projectsBtn" onclick="projects_click();">Project</a></li>
             </ul>
             <p class="social">
               <a href="https://www.facebook.com/jjuya9381" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/jju_park/" title="" class="external instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.instagram.com/jju_park/" data-animate-hover="pulse" class="external instagram"><i class="fa fa-instagram"></i></a>
               <a href="https://github.com/jjuya" data-animate-hover="pulse" class="external git"><i class="fa fa-git"></i></a>
             </p>
             <div class="copyright text-center text-md-left">
@@ -56,119 +55,204 @@
           </div>
         </div>
         <!--   *** SIDEBAR END ***  -->
+
+        
+        <!--   *** ABOUT ***-->
+        <div class="col-md-8 col-lg-9 content-column white-background" id="indexPage" >
+          <!-- small nav -->
+          <div class="small-navbar d-flex d-md-none">
+            <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
+            <h1 class="small-navbar-heading"> <a href="index.html">Hello, I'm JJuya</a></h1>
+          </div>
+
+          <section id="about">
+            <div class="row">
+              <div class="col-xl-11">
+                <div class="content-column-content">
+                  <h1>About me</h1>
+                  <p class="lead">
+                    사용자에 대한 <strong>관심과 이해</strong>, 개발한 프로그램에 대한 <strong>책임감</strong>을 가지고,<br>
+                    가치를 높여주는 서비스를 기획하고 개발하는 기발자를 꿈꿉니다.
+                  </p>
+
+                  <!-- info and chart -->
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                      <canvas id="myChart" width="555" height="555"></canvas>
+                    </div>
+
+                    <div class="col-md-5 col-sm-5">
+                      <p>
+                        <i class="fa fa-graduation-cap"></i> 학력
+                        <br>
+                        대전반석고등학교 졸업
+                        <br>
+                        경북대학교 컴퓨터학부 졸업
+                      </p>
+                      <p>
+                        <i class="fa fa-book"></i> 교육
+                        <br>
+                        멋쟁이 사자처럼 4기
+                        <br>
+                        비즈니스 스킬업 캠프 (기획)
+                        <br>
+                        비즈니스 스킬업 캠프 (프레젠테이션)
+                        <br>
+                        AI기반 빅데이터 분석 전문가 양성 과정
+                        <br>
+                        두드림 스킬업 직무교육(개발, 기획)
+                      </p>                     
+                    </div>
+
+                    <div class="col-md-3 col-sm-3">
+                      <p><img src="img/me.jpg" alt="This is me" class="image rounded-circle img-fluid"></p>
+                      <p>
+                        <i class="fa fa-heart"></i> 사진, 여행, 카페
+                        <br>
+                        <i class="fa fa-envelope"></i> jjuya9381@naver.com
+                        <br>
+                        <i class="fa fa-github"></i> https://github.com/jjuya
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="skills">
+            <div class="row">
+              <div class="col-xl-11">
+                <div class="content-column-content">
+                  <!-- skills -->
+                  <h4 class="text-uppercase">Skills</h4>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5>I have</h5>
+
+                      <div class="row">
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/html.png" title="" data-placement="bottom" data-toggle="tooltip" alt="" class="img-responsive" data-original-title="HTML"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/css.png" title="" data-placement="bottom" data-toggle="tooltip" class="img-responsive" data-original-title="CSS"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/javascript.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Javascript"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/python.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Python"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/rubyonrails.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Rubu on Rails"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/java.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="JAVA"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/mysql.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="My SQL"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/oracle.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Oracle"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/github.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Github"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/bitbucket.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Bitbucket"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <h5>Interested</h5>
+
+                      <div class="row">
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/react.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="React"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/restframework.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="REST-Framework"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/ml.png" title="" data-placement="bottom" data-toggle="tooltip"class="img-responsive" data-original-title="Machine Learning"></div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-4">
+                          <div class="skill"><img src="img/skills/datascience.png" title="" data-placement="bottom" data-toggle="tooltip" class="img-responsive" data-original-title="Data Science"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <!--   *** ABOUT END ***-->
+
         <!--   *** PORTFOLIO ***-->
-        <div class="col-md-8 col-lg-9 content-column">
+        <div class="col-md-8 col-lg-9 content-column" id="projectsPage" style="display: none;">
           <div class="small-navbar d-flex d-md-none">
             <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
             <h1 class="small-navbar-heading"> <a href="index.html">Creative </a></h1>
           </div>
           <div class="grid row">
             <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/a4-paper.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
-                  <h4>Name of the work 1</h4>
-                  <div class="box-masonry-desription">
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/business-card-26.jpg" alt="" class="img-fluid"></a>
+              <div class="box-masonry">
+                <a href="#!" title="" class="box-masonry-image with-hover-overlay with-hover-icon"
+                  data-toggle="modal" data-target="#houModal">
+                  <img src="img/projects/houlogo.png" alt="" class="img-fluid">
+                </a>
+
                 <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Name of the work 2</a></h4>
+                  <h4> <a href="#!" data-toggle="modal" data-target="#houModal">HOU</a></h4>
                   <div class="box-masonry-desription">
-                    <p> When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+                    <p>Bookmark 정리 서비스</p>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
+              <div class="box-masonry">
+                <a href="#!" title="" class="box-masonry-image with-hover-overlay with-hover-icon"
+                  data-toggle="modal" data-target="#houLandingModal">
+                  <img src="img/projects/many.png" alt="" class="img-fluid">
+                </a>
+
                 <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Name of the work 3</a></h4>
+                  <h4> <a href="#!" data-toggle="modal" data-target="#houLandingModal">HOU Landingpage</a></h4>
                   <div class="box-masonry-desription">
-                    <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                    <p>Hou 소개 페이지</p>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="col-md-6 col-lg-3 grid-item">
+              <div class="box-masonry">
+                <a href="#!" title="" class="box-masonry-image with-hover-overlay with-hover-icon"
+                  data-toggle="modal" data-target="#teenslangModal">
+                  <img src="img/projects/teenbot.png" alt="" class="img-fluid">
+                </a>
+
+                <div class="box-masonry-text">
+                  <h4> <a href="#!" data-toggle="modal" data-target="#teenslangModal">급식체 사전</a></h4>
+                  <div class="box-masonry-desription">
+                    <p>급식체 사전 챗봇</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="col-md-6 col-lg-3 grid-item">
               <div class="box-masonry">
                 <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Item without image</a></h4>
+                  <h4> <a href="#!" data-toggle="modal" data-target="#memoryModal">기억믹스</a></h4>
                   <div class="box-masonry-desription">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/business-card.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
-                  <h4>Name of the work 5</h4>
-                  <div class="box-masonry-desription">
-                    <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry">
-                <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Name of the work 6</a></h4>
-                  <div class="box-masonry-desription">
-                    <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/label-clothes.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Name of the work 7</a></h4>
-                  <div class="box-masonry-desription">
-                    <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/ipad-air-2.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Name of the work 8</a></h4>
-                  <div class="box-masonry-desription">
-                    <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/envelope-brand.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-text">
-                  <h4> <a href="detail.html">Item with image</a></h4>
-                  <div class="box-masonry-desription">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/trifold.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
-                  <h4>Item with image</h4>
-                  <div class="box-masonry-desription">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item">
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/paper-presentation.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
-                  <h4>Item with image</h4>
-                  <div class="box-masonry-desription">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>프로젝션 맵핑</p>
                   </div>
                 </div>
               </div>
@@ -176,6 +260,100 @@
           </div>
         </div>
         <!--   *** PORTFOLIO END ***-->
+
+        <!-- Modals -->
+        <div>
+          <div class="modal fade" id="houModal" tabindex="-1" role="dialog" aria-labelledby="houModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="houModalLabel">
+                    Hou <small>2017.12 ~ </small>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/projects/houbookmark.png" alt="" class="img-fluid">
+                  <p class='text-center'>Bookmark 정리 서비스<br>Web Frontend 담당<br>RubyonRails, Bootstrap 사용</p>
+                  <p class='text-center'>현재 Proto v_2 준비중</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="houLandingModal" tabindex="-1" role="dialog" aria-labelledby="houLandingModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header"> 
+                  <h5 class="modal-title" id="houModalLandingLabel">
+                    Hou Landingpage <small>2017.10</small>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/projects/houlandingpage.PNG" alt="" class="img-fluid">
+                  <p class='text-center'>
+                    Bootstrap을 이용한 웹 페이지 제작<br>
+                    <a href="https://houbookmark.github.io/">https://houbookmark.github.io/</a> 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="teenslangModal" tabindex="-1" role="dialog" aria-labelledby="teenslangModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header"> 
+                  <h5 class="modal-title" id="teenslangLabel">
+                    급식체 사전<small>2017.10</small>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/projects/teenslang.PNG" alt="" class="img-fluid">
+                  <p class='text-center'>
+                    Watson Conversation API를 활용한 급식체 사전<br>
+                    Sring, Bootstrap 사용
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="memoryModal" tabindex="-1" role="dialog" aria-labelledby="memoryModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header"> 
+                  <h5 class="modal-title" id="memoryLabel">
+                    기억믹스<small>2014.10 ~ 2014.12</small>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=g6V4b0z3CM8" allowfullscreen></iframe>
+                  </div>
+                  <p class='text-center'>
+                    프로젝션 맵핑 기획 및 레졸룸 편집<br>
+                    <a href="https://www.youtube.com/watch?v=g6V4b0z3CM8">https://www.youtube.com/watch?v=g6V4b0z3CM8</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modals End -->
+
       </div>
     </div>
   </div>
@@ -187,4 +365,46 @@
   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
   <script src="js/front.js"></script>
+  <script src="js/custom.js"></script>
+  
+  <!-- Chart js-->
+  <script src="js/Chart.js"></script>
+
+  <script type="text/javascript">
+    // Any of the following formats may be used
+    var ctx = document.getElementById("myChart");
+    var chartDatas = {
+      labels: ['워라밸', '경험', '협력', '사람', '성취감', '봉사'],
+      datasets: [{
+          label: '가치관',
+          data: [90, 80, 80, 80, 70, 70],
+          backgroundColor: 'rgba(108, 178, 229, 0.2)',
+          borderColor: 	'#67b0e4',
+          pointBackgroundColor: '#67b0e4',
+          pointBorderColor: '#ffffff',
+          pointBorderWidth: 2
+      }]
+    };
+    var chartOptions = {
+      scale: {
+        ticks: {
+          beginAtZero: true,
+          min: 0,
+          max: 100,
+          stepSize: 25
+        },
+        pointLabels: {
+          fontSize: 13
+        }
+      },
+      legend: {
+        position: 'center'
+      }
+    };
+    var myRadarChart = new Chart(ctx, {
+      type: 'radar',
+      data: chartDatas,
+      options: chartOptions
+    });
+  </script>
 </body>

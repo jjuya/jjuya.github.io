@@ -41,12 +41,11 @@
             <p class="sidebar-p">Originally from Daejeon, currently based in Bucheon. </p>
             <ul class="sidebar-menu">
               <li class="sidebar-item"><a href="index.html" class="sidebar-link">Intro</a></li>
-              <li class="sidebar-item"><a href="about.html" class="sidebar-link">About</a></li>
               <li class="sidebar-item"><a href="project.html" class="sidebar-link active">Project</a></li>
             </ul>
             <p class="social">
               <a href="https://www.facebook.com/jjuya9381" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/jju_park/" title="" class="external instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.instagram.com/jju_park/" data-animate-hover="pulse" class="external instagram"><i class="fa fa-instagram"></i></a>
               <a href="https://github.com/jjuya" data-animate-hover="pulse" class="external git"><i class="fa fa-git"></i></a>
             </p>
             <div class="copyright text-center text-md-left">
@@ -58,7 +57,7 @@
         <!--   *** SIDEBAR END ***  -->
 
         <!--   *** PORTFOLIO ***-->
-        <div class="col-md-8 col-lg-9 content-column">
+        <div class="col-md-8 col-lg-9 content-column" id="projects">
           <div class="small-navbar d-flex d-md-none">
             <button type="button" data-toggle="offcanvas" class="btn btn-outline-primary"> <i class="fa fa-align-left mr-2"></i>Menu</button>
             <h1 class="small-navbar-heading"> <a href="index.html">Creative </a></h1>
@@ -123,27 +122,26 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-8 col-lg-9 content-column">
+          <!-- Modals -->
           <div class="modal fade" id="houModal" tabindex="-1" role="dialog" aria-labelledby="houModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="houModalLabel">
-                      Hou <small>2017.12 ~ </small>
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="img/projects/houbookmark.png" alt="" class="img-fluid">
-                    <p class='text-center'>Bookmark 정리 서비스<br>Web Frontend 담당<br>RubyonRails, Bootstrap 사용</p>
-                    <p class='text-center'>현재 Proto v_2 준비중</p>
-                  </div>
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="houModalLabel">
+                    Hou <small>2017.12 ~ </small>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/projects/houbookmark.png" alt="" class="img-fluid">
+                  <p class='text-center'>Bookmark 정리 서비스<br>Web Frontend 담당<br>RubyonRails, Bootstrap 사용</p>
+                  <p class='text-center'>현재 Proto v_2 준비중</p>
                 </div>
               </div>
+            </div>
           </div>
 
           <div class="modal fade" id="houLandingModal" tabindex="-1" role="dialog" aria-labelledby="houLandingModalLabel" aria-hidden="true">
